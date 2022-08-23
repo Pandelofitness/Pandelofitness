@@ -1,0 +1,461 @@
+body{
+    background-color: #1e1f26;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+nav{
+    height: 90px;
+    background-color:#222222 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hamburger{
+   width: 55px;
+   height: 60px;
+   margin-top: 15px;
+   margin-right: 15px;
+   background-color:  #1e1f26;
+   color: white;
+   border: #1e1f26;
+
+}
+
+.logo{
+    margin-left: 10px;
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto_jero{
+    margin: auto;
+   margin-top: 60px;
+   width: 80%;
+   height:80%;
+   border-radius: 500px;   
+}
+
+.principal_info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(77, 76, 76);
+}
+.principal_info h3{
+    font-weight: 400;
+    padding: 10px;
+}
+
+.asesoria{
+  width: 250px;
+  height: 44px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #f0d561;
+  border:  #f0d561;
+  margin-bottom: 30px;
+  color: black;
+  font-weight: 600;
+  
+}
+
+#sobremi{
+    display: flex;
+    padding: 20px;
+    margin-top: 30px;
+    flex-direction: column;
+    
+}
+h2{
+font-size: 29px;
+}
+.barr{
+    width: 76px;
+    height: 6px;
+    background-color:#f0d561 ;
+}
+.sobremi{
+    display: flex;
+    flex-direction: column;
+}
+.sobremi_h3{
+    color: rgb(152, 148, 148);
+    margin-bottom: 10px;
+    font-size: 15px;
+    
+}
+.cambiojero{
+    display: flex;
+    flex-direction: row;
+}
+.cambio{    
+    width:100%;  
+   
+}
+#servicios{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 0;  
+
+    text-align: center;
+    background-color: #222222;
+}
+.servicios_h3{
+    color:  rgb(183, 180, 180);
+}
+.servicios_h2{
+   font-weight:400;
+}
+
+.contenedor_servicios{
+    height: 100%;
+    background-color: #5b5122;
+    margin-top: 30px;
+    border: 5px solid #f0d561 ;
+}
+
+.pesa{
+    width: 150px;
+    border-radius: 90px;
+    margin-top: 20px;
+}
+
+.contenedor_servicios_h2{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.contenedor_servicios_h4{
+    font-weight: 100;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    
+}
+.div_mobile{
+   display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: none;
+   
+}
+
+.div_mobiledespleged{
+    display: flex;
+    transition: 1s;
+    
+}
+
+.mobile_a{
+    
+    background-color:#1e1f26 ;
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    padding-top: 30px;
+    color: white;
+    padding-left: 10px;
+    
+}
+
+.mobile_a:hover{
+    color: #f0d561;
+   
+}
+
+.x{
+  display: flex;
+  justify-content: center
+}
+#incluye{
+    display: flex;
+    flex-direction: column;
+}
+.ahora{
+    align-self: center;
+    margin-top: 40px;
+    width: 250px;
+  height: 44px;
+  border-radius: 25px;
+  margin-top: 70px;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #f0d561;
+  border:  #f0d561;
+  margin-bottom: 70px;
+  color: black;
+  font-weight: 600;
+}
+
+.incluye_div{
+    display: flex;
+    flex-direction: column;
+    height: 385px;
+    background-color: #5b5122;
+    margin-top: 30px;
+    border: 5px solid #f0d561 ;
+    width: 93%;
+    margin: auto;
+    
+    font-size: 20px;
+    font-weight: 10;
+}
+.contenedorh4{
+    align-self: center;
+    margin-top: 20px;
+}
+.incluye_div h4{
+    font-weight: 400;  
+    padding-bottom: 10px;
+}
+.incluyediv_title{
+    background-color:#f0d561 ;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    padding-top: 10px;
+    
+}
+
+.subs{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #5b5122;
+    margin-top: 30px;
+    border: 5px solid #f0d561 ;
+    width: 93%;
+    margin: auto;  
+    font-size: 20px;
+    font-weight: 10;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+}
+.title_subs{
+    background-color:#f0d561 ;
+    border: 5px solid #f0d561 ;
+    height: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    
+}
+.title_subs p{
+    font-size: 16px;
+    
+    
+}
+.subs h3 b{
+    font-size: 30px;
+   
+}
+
+.asesoriasubs{
+    height:50px;
+    
+}
+
+#preguntas{
+    margin-top: 100px;
+    
+}
+#preguntas h3{
+    padding-left: 20px;
+}
+#preguntas .barr{
+    margin-left: 20px;
+}
+.qa{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: white;
+    border-bottom: 5px solid #f0d561;
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    color: black;
+
+}
+.contenedor_pregunta{
+    color: white; 
+    width: 100%;
+    margin: auto;
+
+}
+.pregunta{
+    padding-left: 15px;
+    height: 50px;
+    background-color:#5b5122 ;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight:500 ;
+}
+.qa p{
+    padding: 15px;
+    font-weight: 400;
+}
+.wpp{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 10px;
+    font-size:30px;
+    background-color: #0df053;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    
+    
+  }
+  .fa-brands {
+    margin-top: 6px;
+  }
+  footer{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #31333d;
+    margin-top: 50px;
+  }
+  .instagram{
+    width: 50px;
+    height: 50px;;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    
+  }
+ .tiktok{
+    
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    
+ }
+ .h3foo{
+    align-self: center;
+ }
+ .footer_img{
+    align-self: center;
+    margin-top: 10px;
+    height: 70px;
+    width: 135px;
+   
+ }
+
+@media (min-width:720px){
+    .fa-brands {
+        margin-top: 0;
+      }
+    #principal{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .foto_jero{
+        width: 600px;
+        margin-left: 70px;
+        transition: 2s;
+    }
+    
+    .principal_info{
+       max-width:600px;
+       border: 0;
+       margin-right: 100px;
+       font-size: 40px;
+    }
+    button{
+        transition: 1s;
+    }
+    button:hover{
+        background-color: #776a2d;
+    }
+
+    .cambio{
+        width: 600px;
+        margin: auto;
+    }
+    
+    #sobremi p {
+        width: 95%;
+        margin: auto;
+      
+    }
+    .servicion_cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenedor_servicios {
+        max-width: 400px;
+        height: 500px;
+
+    }
+    .contenedor_servicios_h2{
+        padding: 10px;
+    }
+    .final{
+        display: flex;
+        flex-direction: row;
+        height: 385px;
+        margin-top: 40px;
+        justify-content: space-between;
+
+    }
+    .incluye_div{
+        margin:auto;
+        width: 600px;
+        margin-bottom: 0;
+    }
+    #preguntas h3{
+        margin-top: 0;
+    }
+    .subs{
+        max-width: 600px;
+       
+    }
+    
+  .qa{
+    max-width: 500px;
+  }
+
+  #preguntas  {
+    margin-top: 100px;
+  }
+
+ 
+ 
+  
+}
