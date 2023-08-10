@@ -27,24 +27,40 @@
     </div>
     </section>
 
-    <section id="form">
-        <div class="contenedor_form" data-aos-duration="2000"data-aos="fade-up">
-            <div class="form_title"> <h4>Formulario</h4>  </div>
-            <form class="inputs" action="https://formsubmit.co/Jpandeloe@gmail.com" method="POST">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
-        
-                <input class="last_input" type="email" id="email" name="email" placeholder="mail">   
-                
-                <input class="sumbit sumbit_ebook" type="submit"> Enviar </input>
+    <div class="pago_avanzado centered-div">
+        <h3>¿Como queres pagar?</h3>
+        <h5>Atencion!</h5>
+        <div class="sub">.</div>
+        <p class="p_centered">si pagas con paypal mandame el comprobante en un mensaje directo</p>
+        <div class="buttons_cenetered"> 
+            <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848968cba701896990cde10020" target="_blank" class=""> <button class="asesoria asesoriasubs boton_mp"><p>Mercado Pago</p> <img src="img/mp_logo.png" alt=""></button> </a>
 
-                <input type="hidden" name="_next" value="https://valenchongo.github.io/JeroWebsite/index.html#principal">
-                <input type="hidden" name="_captcha" value="false">
-            </form>        
+            <div id="paypal-button-container-P-7UN59839907368220MTDTHLA"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AUjll1ydZmSFkrJsbxMzXarRa6dYGiY09Nh_wbFGJQG4klcL9bjdZU7xaZMa0ZtWuE-VjFJxYTZBsYnT&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-7UN59839907368220MTDTHLA'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-7UN59839907368220MTDTHLA'); // Renders the PayPal button
+</script>
+
         </div>
-    </section>
-
+       
+    </div>
     
-
     <footer>
         <h3 class="sobremi_h3 h3foo"> MIS REDES</h3>
         <div class="footer_img">
@@ -56,6 +72,7 @@
     </a>
     </div>
     </footer>
+
 
 
 
