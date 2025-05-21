@@ -63,6 +63,27 @@
        <a href="https://mpago.la/1CMdR5C" target="_blank" class=""> <button class="asesoria asesoriasubs boton_mp"><p>QUIERO EL EBOOK</p> <img src="img/mp_logo.png" alt=""></button> </a>
        <a href="aviso.htm" target="_blank" class=""> <button class="asesoria asesoriasubs boton_pp"><p>QUIERO EL EBOOK</p> <img src="img/logo_pp.png" alt=""></button> </a>
 
+       <!-- Formulario para enviar por WhatsApp -->
+            
+            <form id="whatsappForm" style="margin-top: 20px; text-align: center;">
+                <h1>Estemos contacto!</h1>
+                <input type="text" id="nombre" placeholder="Tu nombre" required style="margin: 5px; padding: 8px; width: 80%;">
+                <input type="email" id="email" placeholder="Tu email" required style="margin: 5px; padding: 8px; width: 80%;">
+                <button type="submit" style="padding: 10px 20px; margin-top: 10px; background-color: #25D366; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Enviar por WhatsApp
+                </button>
+            </form>
+
+            <script>
+                document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const nombre = encodeURIComponent(document.getElementById('nombre').value);
+                    const email = encodeURIComponent(document.getElementById('email').value);
+                    const mensaje = `Hola Jero, soy ${nombre} compre tu Ebook “Diseña tu Rutina”. Aca te dejo mi mail para que me lo envíes ${email}. ¡Gracias!`;
+                    const url = `https://wa.me/5491139497468?text=${mensaje}`; // CAMBIÁ este número por el tuyo real
+                    window.open(url, '_blank');
+                });
+            </script>
 
         <div class="qa" data-aos="fade-up"  data-aos-duration="2000">
             <div class="contenedor_pregunta">
