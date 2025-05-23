@@ -1344,3 +1344,36 @@ margin-top: 30px;
   width: 100px;
 }
 }
+
+.list_cart p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 10px;
+  word-break: break-word; /* evita que se desborde */
+}
+
+@media screen and (max-width: 480px) {
+  .list_cart p {
+    font-size: 14px;
+  }
+}
+
+.list_cart_avan p {
+  line-height: 1.4;             /* Espaciado dentro del párrafo */
+  margin-bottom:20px;          /* Espaciado entre párrafos */
+  font-size: 14px;
+  text-align: left;             /* Alineación del texto */
+  word-break: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .list_cart_avan p {
+    font-size: 14px;
+  }
+}
+
