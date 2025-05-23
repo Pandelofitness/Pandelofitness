@@ -1351,7 +1351,7 @@ margin-top: 30px;
   gap: 10px;
   line-height: 1.5;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
   word-break: break-word; /* evita que se desborde */
 }
 
@@ -1363,7 +1363,7 @@ margin-top: 30px;
 
 .list_cart_avan p {
   line-height: 1.4;             /* Espaciado dentro del párrafo */
-  margin-bottom:20px;          /* Espaciado entre párrafos */
+  margin-bottom:28px;          /* Espaciado entre párrafos */
   font-size: 14px;
   text-align: left;             /* Alineación del texto */
   word-break: break-word;
